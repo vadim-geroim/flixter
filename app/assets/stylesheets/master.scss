@@ -13,7 +13,7 @@ body {
   box-shadow: 0px 1px 3px #2a2a2a;
 }
 
-.navbar-light a.navbar-brand {
+.navbar-light .navbar-brand {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
   color: white;
@@ -50,12 +50,33 @@ h1, h2, h3, h4, h5, h6, .navbar {
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
-.btn {
-  border-radius: 0;
-}
 
 .feature {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
 }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+#navbarNav {
+  flex-direction: row;
+}
+
+.navbar-light .nav-link:hover {
+  background-color: white;
+  color: black;
+}
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 15px;
+}
+
