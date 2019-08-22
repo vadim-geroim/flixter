@@ -25,9 +25,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'devise'
-gem 'carrierwave', '~> 2.0'
 gem 'figaro'
 gem 'fog-aws'
+gem 'mini_magick'
+gem 'carrierwave', '~> 1.3.1'
+gem 'carrierwave-aws', '~> 1.0.2'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
