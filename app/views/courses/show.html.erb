@@ -1,8 +1,12 @@
 <br />
 
 <div class="booyah-box col-10 offset-1">
-  <h1><%= @course.title %></h1>
-    <%= image_tag(@course.image.url, class: 'img-fluid') %>
+  <br />
+  <h1 class="text-center"><%= @course.title %></h1>
+  <br />
+    <div class="text-center">
+      <%= image_tag(@course.image.url, class: 'img-fluid') %>
+    </div>
   <br />
   <div class="row">
     <div class="col-sm-2 col-12 text-sm-center ">
@@ -20,17 +24,26 @@
     <% end %>
     <div class="col-12">
     <% @course.sections.each do |section| %>
+      <br /><br />
       <div class="section">
-        <%= section.title %>
-          <% section.lessons.each do |lesson| %>
-            <div class="lesson">
-              <%= link_to lesson_path(lesson) do %>
-                <b><%= lesson.title %></b>
-                -
-                <%= lesson.subtitle %>
-              <% end %>
-            </div>
-          <% end %>
+        <h3>
+          <%= section.title %>
+        </h3>
+          <div class='row'>
+            <% section.lessons.each do |lesson| %>
+              <div class="col-12 col-sm-6">          
+                <div class="lesson text-center">
+                  <br />
+                  <%= link_to lesson_path(lesson) do %>
+                    <b><%= lesson.title %></b>
+                    <br />
+                    <%= lesson.subtitle %>
+                  <% end %>
+                </div>
+                <br class="clr" />
+              </div>  
+            <% end %>
+          </div>  
            <br />  
       </div>
     <% end %>
