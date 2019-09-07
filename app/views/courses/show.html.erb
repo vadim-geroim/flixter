@@ -28,7 +28,10 @@
     <% if current_user %>
 
       <% if current_user && current_user.enrolled_in?(@course) %>
+      <div class="col-4">
         <h3 class="badge badge-info">You are Enrolled!</h3>
+      </div>
+        
       <% else %>
 
         <% if @course.free? %>
