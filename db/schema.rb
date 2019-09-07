@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2019_08_30_005610) do
     t.index ["course_id"], name: "index_enrollments_on_course_id"
     t.index ["user_id", "course_id"], name: "index_enrollments_on_user_id_and_course_id"
   end
-
+  
   create_table "lessons", force: :cascade do |t|
     t.string "title"
     t.string "subtitle"

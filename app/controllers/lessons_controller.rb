@@ -21,5 +21,4 @@ class LessonsController < ApplicationController
       redirect_to course_path(@course), alert: 'You are not enrolled in'
     end
   end
-
 end
