@@ -5,7 +5,9 @@
   <h1 class="text-center"><%= @course.title %></h1>
   <br />
     <div class="text-center">
-      <%= image_tag(@course.image.url, class: 'img-fluid') %>
+      <% unless @course.image.url.nil? %>
+        <%= image_tag(@course.image.url, class: 'img-fluid') %>
+      <% end %>
     </div>
   <br />
   <div class="row">
@@ -78,4 +80,3 @@
     </div>
   </div>
 </div>
-
