@@ -28,7 +28,7 @@ gem 'devise'
 gem 'figaro'
 gem 'fog-aws'
 gem 'mini_magick'
-gem 'carrierwave', '~> 1.3.1'
+gem 'carrierwave', '~> 1.3.2'
 gem 'carrierwave-aws', '~> 1.0.2'
 
 gem 'stripe'
